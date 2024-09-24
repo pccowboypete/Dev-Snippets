@@ -1,7 +1,0 @@
-@media only screen and (max-width: 992px) {
-  /* tablet */
-}
-
-@media only screen and (max-width: 537px) {
-  /* mobile phones */
-}
