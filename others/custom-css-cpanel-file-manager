@@ -1,0 +1,10 @@
+#path{
+  width : 600px;
+}
+
+.path{
+  position : fixed;
+  top : 5px;
+  left : 60px;
+  width : 600px;
+}
