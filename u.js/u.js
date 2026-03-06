@@ -7,7 +7,7 @@ var reduce = false;
 reduce = true;
 reduce = false;
 
-var pesoToUSD = 56.76;
+var pesoToUSD = 58.00;
 
 const formatterUSD = new Intl.NumberFormat('en-US', {
   style: 'currency',
