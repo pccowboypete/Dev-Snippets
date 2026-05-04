@@ -7,7 +7,7 @@ var reduce = false;
 reduce = true;
 reduce = false;
 
-var pesoToUSD = 59;
+var pesoToUSD = 60.78;
 
 const formatterUSD = new Intl.NumberFormat('en-US', {
   style: 'currency',
@@ -184,7 +184,7 @@ if (true) {
     _this_tr.each(function (index_tr, tr) {
       var _this_td = $(tr).find(" > td");
 
-      if (index_tr <= 9) {
+      if (index_tr <= 7) {
         _this_td.each(function (index_td, td) {
 
           if (index_td >= 1 && index_td <= 7) {
@@ -216,7 +216,6 @@ if (true) {
   });
 
 }
-
 
 
 
