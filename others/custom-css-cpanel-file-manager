@@ -1,4 +1,5 @@
-#path{
+#path,
+#location{
   width : 600px;
 }
 
