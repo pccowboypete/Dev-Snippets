@@ -7,7 +7,7 @@ var reduce = false;
 reduce = true;
 reduce = false;
 
-var pesoToUSD = 60.78;
+var pesoToUSD = 60.69;
 
 const formatterUSD = new Intl.NumberFormat('en-US', {
   style: 'currency',
@@ -28,7 +28,8 @@ $(document).ready(function () {
   // in progress
   if (true) {
 
-    var inprogress_dollarVal = $(".js-tab-in_progress .qa-reports-amount").text().replace("$", "");
+    var inprogress_dollarVal = $(".js-tab-in_progress .qa-reports-amount").text().replace("$", "").replace(/,/g, "");
+    
     inprogress_dollarVal = inprogress_dollarVal - inprogress_exclude;
     var inprogress_vat = ((inprogress_dollarVal * .10) * .12);
 
@@ -48,7 +49,8 @@ $(document).ready(function () {
   // in review
   if (true) {
 
-    var inreview_dollarVal = $(".js-tab-in_review .qa-reports-amount").text().replace("$", "");
+    var inreview_dollarVal = $(".js-tab-in_review .qa-reports-amount").text().replace("$", "").replace(/,/g, "");
+    
     inreview_dollarVal = inreview_dollarVal - inreview_exclude;
     var inreview_vat = ((inreview_dollarVal * .10) * .12);
 
@@ -75,7 +77,7 @@ $(document).ready(function () {
   // pending
   if (true) {
 
-    var pending_dollarVal = $(".js-tab-pending .qa-reports-amount").text().replace("$", "");
+    var pending_dollarVal = $(".js-tab-pending .qa-reports-amount").text().replace("$", "").replace(/,/g, "");
     pending_dollarVal = pending_dollarVal - pending_exclude;
     var pending_vat = ((pending_dollarVal * .10) * .12);
 
@@ -104,7 +106,7 @@ $(document).ready(function () {
   // available
   if (true) {
 
-    var available_dollarVal = $(".js-tab-available .qa-reports-amount").text().replace("$", "");
+    var available_dollarVal = $(".js-tab-available .qa-reports-amount").text().replace("$", "").replace(/,/g, "");
     available_dollarVal = available_dollarVal - available_exclude;
     var available_vat = ((available_dollarVal * .10) * .12);
 
@@ -184,7 +186,7 @@ if (true) {
     _this_tr.each(function (index_tr, tr) {
       var _this_td = $(tr).find(" > td");
 
-      if (index_tr <= 7) {
+      if (index_tr <= 5) {
         _this_td.each(function (index_td, td) {
 
           if (index_td >= 1 && index_td <= 7) {
@@ -216,6 +218,5 @@ if (true) {
   });
 
 }
-
 
 
