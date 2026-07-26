@@ -1,3 +1,22 @@
+.path .input-group #location{
+  width : 600px;
+}
+
+.path .input-group{
+  position : fixed;
+  top : 5px;
+  left : 60px;
+  width: 650px;
+}
+
+
+
+
+
+//////////////////////////////////////////////////////
+
+
+
 #path,
 #location{
   width : 600px;
