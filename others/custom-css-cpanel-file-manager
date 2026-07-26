@@ -3,7 +3,8 @@
   width : 600px;
 }
 
-.path{
+.path,
+#location{
   position : fixed;
   top : 5px;
   left : 60px;
